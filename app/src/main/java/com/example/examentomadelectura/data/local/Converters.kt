@@ -13,4 +13,14 @@ class Converters {
     fun dateToTimestamp(date: Date?): Long? {
         return date?.time
     }
+
+    @TypeConverter
+    fun fromReadingType(value: String): ReadingType {
+        return ReadingType.valueOf(value)
+    }
+
+    @TypeConverter
+    fun readingTypeToString(type: ReadingType): String {
+        return type.name
+    }
 }

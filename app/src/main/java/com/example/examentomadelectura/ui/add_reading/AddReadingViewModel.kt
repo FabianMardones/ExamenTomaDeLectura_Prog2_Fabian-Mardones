@@ -11,7 +11,9 @@ import javax.inject.Inject
 import java.util.Date
 
 @HiltViewModel
-class AddReadingViewModel @Inject constructor(private val dataRepository: DataRepository) : ViewModel() {
+class AddReadingViewModel @Inject constructor(
+    private val dataRepository: DataRepository
+) : ViewModel() {
 
     fun insertReading(type: ReadingType, value: Double, date: Date) {
         viewModelScope.launch {
