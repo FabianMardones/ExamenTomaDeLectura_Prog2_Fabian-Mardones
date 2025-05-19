@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
-    kotlin("kapt")
+    alias(libs.plugins.kotlin.android) // Actualiza esta versión para que coincida con la del nivel superior
+    kotlin("kapt")        // Asegúrate de que la versión de kapt coincida con la versión de Kotlin
     alias(libs.plugins.kotlin.compose)
 }
 
