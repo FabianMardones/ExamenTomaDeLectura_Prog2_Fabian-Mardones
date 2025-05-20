@@ -16,3 +16,4 @@ class ReadingListViewModel @Inject constructor(dataRepository: DataRepository) :
         initialValue = emptyList()
     )
 }
+

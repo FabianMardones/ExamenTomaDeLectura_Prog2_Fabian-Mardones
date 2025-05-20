@@ -1,14 +1,21 @@
 <resources>
-    <string name="app_name">Examen Toma de Lectura</string>
-    <string name="readings_list_title">Lista de Lecturas</string>
-    <string name="add_reading_title">Agregar Lectura</string>
+    <string name="app_name">ExamenTomaDeLectura</string>
+
+    <string name="add_reading_title">Añadir Nueva Lectura</string>
     <string name="expense_type">Tipo de Gasto</string>
     <string name="meter_value">Valor del Medidor</string>
     <string name="save">Guardar</string>
+    <string name="navigate_back">Volver atrás</string>
+    <string name="dropdown_description">Abrir menú desplegable de tipos</string>
+
     <string name="water">Agua</string>
     <string name="electricity">Electricidad</string>
     <string name="gas">Gas</string>
-    <string name="no_readings_yet">No hay lecturas registradas aún.</string>
-    <string name="add_reading">Agregar Lectura</string>
-    <string name="meter_value_with_value">Valor: %1$.2f</string>
+
+    <string name="readings_list_title">Lista de Lecturas</string>
+    <string name="add_reading">Añadir Lectura</string>
+    <string name="no_readings_yet">Aún no hay lecturas.\n¡Presiona el botón \'+\' para añadir una!</string>
+    <string name="reading_item_type_prefix">Tipo:</string>
+    <string name="reading_item_value_prefix">Valor:</string>
+    <string name="reading_item_date_prefix">Fecha:</string>
 </resources>

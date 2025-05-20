@@ -1,6 +1,7 @@
 package com.example.examentomadelectura.di
 
 import android.app.Application
+import androidx.room.Room
 import com.example.examentomadelectura.data.DataRepository
 import com.example.examentomadelectura.data.local.AppDatabase
 import com.example.examentomadelectura.data.local.ReadingDao
@@ -16,7 +17,12 @@ object AppModule {
     @Provides
     @Singleton
     fun provideAppDatabase(application: Application): AppDatabase {
-        return AppDatabase.getDatabase(application)
+        return Room.databaseBuilder(
+            application.applicationContext,
+            AppDatabase::class.java,
+            "readings_database"
+        )
+            .build()
     }
 
     @Provides

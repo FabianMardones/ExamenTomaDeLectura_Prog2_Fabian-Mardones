@@ -13,12 +13,12 @@ fun AppNavigation(navController: NavHostController) {
         composable(Screen.ReadingList.route) {
             ReadingListScreen(
                 onNavigateToAddReading = { navController.navigate(Screen.AddReading.route) }
-            ) // Pass the lambda here
+            )
         }
         composable(Screen.AddReading.route) {
             AddReadingScreen(
                 onNavigateBack = { navController.popBackStack() }
-            ) // And here
+            )
         }
     }
 }
